@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+#box{
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 5px;
+
+    animation: go-around 8s ease-in-out infinite 1s;
+}
+
+@keyframes go-around {
+    0%,100%{
+       top: 0;
+       left: 0;
+       background-color: blue;
+    }
+    12.5%{
+        top: 0;
+        left: calc(100% - 280px);
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+    25%{
+       top:calc(100% - 200px);
+       left: calc(100% - 280px);
+       transform: rotate(360deg);
+       background-color: red;
+    }
+    37.5%{
+         top:calc(100% - 200px);
+         left: 0;
+         transform: rotate(180deg);
+         background-color: rgb(227, 13, 163);
+    }
+    50%{
+       top: 0;
+       left: 0;
+       transform: rotate(360deg);
+       background-color: orange;
+    }
+    62.5%{
+        top:calc(100% - 200px);
+        left: 0;
+        transform: rotate(180deg);
+        background-color: rgb(227, 13, 163); ;
+    }
+    75%{
+        top:calc(100% - 200px);
+        left: calc(100% - 280px);
+        transform: rotate(360deg);
+        background-color: red;
+    }
+
+    87.5%{
+        top: 0;
+        left: calc(100% - 280px);
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+}

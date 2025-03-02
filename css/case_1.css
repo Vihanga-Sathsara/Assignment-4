@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+
+section{
+    height: 100vh;
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
+img{
+    height: 6vh;
+    margin-right: 1vw;
+}
+
+span{
+    margin-left: 2vw;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.menu{
+    background-color: rgb(140, 67, 208);    
+    height: 8vh;
+    width: 25vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    box-shadow: 4px 5px 5px rgb(90, 92, 91);
+    margin-left: -20vw;
+    transition: transform 1.2s ease-in-out;
+   
+}
+
+.menu:hover{
+    transform: translateX(19vw);
+}

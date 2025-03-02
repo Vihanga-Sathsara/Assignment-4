@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#circle{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    border: 20px solid white;
+    border-radius: 50%;
+    border-top-color:red;
+    cursor: pointer;
+}
+
+#middleCircle{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+
+}
+#circle:hover{
+    transform: rotate(360deg);
+    transition: all 2s ease;
+}
+
+
